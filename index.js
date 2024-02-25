@@ -3,6 +3,9 @@ const databse = require("./database/index")
 const app = express()
 const port = 8000 || process.env.PORT
 app.use(express.json())
+app.get("/",(req,res,next)=>{
+    res.send("AjayTest")
+})
 app.get("/users",(req,res,next)=>{
     res.send("Ajay")
 })
