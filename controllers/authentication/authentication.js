@@ -1,4 +1,4 @@
-const authenticationService = require('../../services/authentication/authentication');
+const { authenticationService } = require('../../services');
 const express = require('express');
 const route = express();
 const authenticationController = route.get(

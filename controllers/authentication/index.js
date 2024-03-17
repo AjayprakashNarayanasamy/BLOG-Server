@@ -1,4 +1,6 @@
-const authenticationController = require('./authentication')
+const authenticationController = require('./authentication');
+const registerController = require('./register');
 module.exports = {
-    authenticationController
-}
+  authenticationController,
+  registerController,
+};

@@ -1,6 +1,7 @@
-const {authenticationService} = require('./authentication/index')
+const {authenticationService , registerService} = require('./authentication/index')
 
 
 module.exports ={
-    authenticationService
+    authenticationService,
+    registerService
 }

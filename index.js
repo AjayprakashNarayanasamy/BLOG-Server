@@ -1,9 +1,11 @@
 const express = require("express")
 const router = require('./routes/index')
 const { client, dbConnection} = require("./database/index")
+const cors = require('cors')
 const app = express()
 const port = 8000 || process.env.PORT
 app.use(express.json())
+app.use(cors())
 app.use(router)
 dbConnection()
   .then(() => {

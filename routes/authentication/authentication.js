@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const apiRoutes = express.Router();
-const authenticationController = require('../../controllers/authentication/authentication')
+const { authenticationController, registerController } = require('../../controllers');
 
 function authenticationRoutes() {
-  console.log('Ajay2')
   apiRoutes.use(authenticationController);
+  apiRoutes.use(registerController);
   router.use('/auth', apiRoutes);
   return router;
 }
